@@ -1,10 +1,7 @@
 package com.programmingtechie.orderservice.model;
 
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
 import javax.persistence.*;
 import java.math.BigDecimal;
@@ -15,14 +12,14 @@ import java.math.BigDecimal;
 @AllArgsConstructor
 @Setter
 @Getter
+@Builder
 public class OrderLineItems {
 
     @Id
-    @GeneratedValue(strategy=GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String skuCode;
     private BigDecimal price;
     private Integer quantity;
-
 
 }
