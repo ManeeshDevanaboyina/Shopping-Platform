@@ -8,11 +8,13 @@ import com.maneesh.orderservice.model.OrderLineItems;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.UUID;
 
 @Service
 @RequiredArgsConstructor
+@Transactional //Spring framework will automatically create and commit the transactions
 public class OrderService {
 
     @Autowired
