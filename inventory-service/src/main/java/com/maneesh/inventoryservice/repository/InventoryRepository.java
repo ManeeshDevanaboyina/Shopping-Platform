@@ -1,6 +1,6 @@
-package com.programmingtechie.inventoryservice.repository;
+package com.maneesh.inventoryservice.repository;
 
-import com.programmingtechie.inventoryservice.model.Inventory;
+import com.maneesh.inventoryservice.model.Inventory;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

@@ -1,7 +1,7 @@
-package com.programmingtechie.inventoryservice.service;
+package com.maneesh.inventoryservice.service;
 
 
-import com.programmingtechie.inventoryservice.repository.InventoryRepository;
+import com.maneesh.inventoryservice.repository.InventoryRepository;
 import lombok.*;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;

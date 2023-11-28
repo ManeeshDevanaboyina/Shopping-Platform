@@ -1,15 +1,11 @@
-package com.programmingtechie.inventoryservice;
+package com.maneesh.inventoryservice;
 
-import com.programmingtechie.inventoryservice.model.Inventory;
-import com.programmingtechie.inventoryservice.repository.InventoryRepository;
+import com.maneesh.inventoryservice.model.Inventory;
+import com.maneesh.inventoryservice.repository.InventoryRepository;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
-
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
 
 @SpringBootApplication
 public class InventoryServiceApplication {
