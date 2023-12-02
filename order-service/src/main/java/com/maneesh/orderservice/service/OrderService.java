@@ -25,7 +25,7 @@ public class OrderService {
     @Autowired
     private OrderRepository orderRepository;
 
-    private final WebClient webClient;
+    private final WebClient.Builder webClientBuilder;
 
     public void placeOrder(OrderRequest orderRequest){
 
@@ -42,8 +42,8 @@ public class OrderService {
         //Call Inventory Service to find whether the product is in stock
         System.out.println("skuCodes received from User"+skuCodes);
 
-       InventoryResponse[] inventoryResponseArray= webClient.get()
-                .uri("http://localhost:8082/api/inventory",uriBuilder -> uriBuilder.queryParam("skuCode",skuCodes).build())
+       InventoryResponse[] inventoryResponseArray= webClientBuilder.build().get()
+                .uri("http://inventory-service/api/inventory",uriBuilder -> uriBuilder.queryParam("skuCode",skuCodes).build())
                 .retrieve()
                 .bodyToMono(InventoryResponse[].class)//reading data from web client response
                 .block();//Webclient makes Synchronous request to Inventory Endpoint
