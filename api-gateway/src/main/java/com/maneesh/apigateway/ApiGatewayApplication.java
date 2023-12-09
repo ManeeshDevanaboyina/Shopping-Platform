@@ -11,6 +11,7 @@ public class ApiGatewayApplication {
 
     public static void main(String[] args){
 
+        //Start
         SpringApplication.run(ApiGatewayApplication.class,args);
     }
 }
