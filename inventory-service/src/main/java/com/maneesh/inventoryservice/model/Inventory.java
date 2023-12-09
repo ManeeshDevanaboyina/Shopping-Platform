@@ -1,4 +1,4 @@
-package com.programmingtechie.inventoryservice.model;
+package com.maneesh.inventoryservice.model;
 
 import lombok.*;
 import net.bytebuddy.dynamic.loading.InjectionClassLoader;
